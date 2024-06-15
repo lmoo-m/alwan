@@ -40,7 +40,7 @@ const Navbar = () => {
     return (
         <nav
             className={`flex justify-around transition  ${
-                isScroll || pathname !== "/"
+                isScroll || pathname !== "/" || isOpen
                     ? "bg-white shadow-md text-black"
                     : "text-white"
             }  py-4 items-center fixed w-full top-0`}
@@ -76,9 +76,9 @@ const Navbar = () => {
                 {/* menu */}
                 <div
                     className={`fixed left-0 top-14 ${
-                        isScroll && "bg-white"
+                        isScroll || isOpen ? "bg-white" : ""
                     } w-full flex flex-col gap-4 px-2 shadow-md overflow-hidden transition ${
-                        isOpen ? "h-[15rem]" : "h-0"
+                        isOpen ? "h-[11rem]" : "h-0"
                     }`}
                     style={{
                         transition: ".75s ease",

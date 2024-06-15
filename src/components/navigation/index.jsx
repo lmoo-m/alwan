@@ -7,7 +7,9 @@ const Navigation = ({ page, children }) => {
             <div className="text-sm breadcrumbs">
                 <ul>
                     <li>
-                        <Link to={"/"}>Beranda</Link>
+                        <Link to={"/"} className="text-black/50">
+                            Beranda
+                        </Link>
                     </li>
                     <li>{page}</li>
                 </ul>

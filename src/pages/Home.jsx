@@ -1,16 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/layout";
 import heroImage from "../assets/hero.jpg";
 import intro from "../assets/intro.jpg";
 import man from "../assets/Man-Top.webp";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import order from "../utils/order";
 
 const PRODUCTS = [
-    {
-        title: "12 Jam",
-        price: "Rp 2.000",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel et optio dolor aperiam voluptatum rem, soluta alias perferendis enim similique ullam fuga, accusamus recusandae? Modi libero magni expedita molestias quisquam ",
-    },
     {
         title: "1 Hari",
         price: "Rp 3.000",
@@ -40,16 +37,21 @@ const Home = () => {
             >
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
-                    <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">
+                    <div className="max-w-md ">
+                        <h1
+                            className="mb-5 text-5xl font-bold"
+                            data-aos="fade-up"
+                        >
                             Solusi Layanan Internet Anda
                         </h1>
-                        <p className="mb-5">
+                        <p className="mb-5" data-aos="fade-up">
                             Provident cupiditate voluptatem et in. Quaerat
                             fugiat ut assumenda excepturi exercitationem quasi.
                             In deleniti eaque aut repudiandae et a id nisi.
                         </p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <button className="btn btn-primary" data-aos="fade-up">
+                            Get Started
+                        </button>
                     </div>
                 </div>
             </div>
@@ -57,11 +59,12 @@ const Home = () => {
             <div className="hero min-h-screen ">
                 <div className="hero-content flex-col lg:flex-row">
                     <img
+                        data-aos="fade-up"
                         src={intro}
                         className=" rounded-lg shadow-2xl w-[35rem] object-cover"
                     />
                     <div>
-                        <p className="py-6">
+                        <p className="py-6" data-aos="fade-up">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Cumque pariatur voluptate, ea, consequuntur
                             temporibus incidunt quae aut quasi nisi velit fuga
@@ -77,7 +80,10 @@ const Home = () => {
             </div>
             {/* product */}
             <div className="min-h-screen flex justify-center py-5 flex-col gap-5">
-                <h1 className="text-5xl text-center font-bold ">
+                <h1
+                    className="text-5xl text-center font-bold "
+                    data-aos="fade-up"
+                >
                     Paket Internet Kami
                 </h1>
                 <div className="px-5 flex flex-wrap justify-center mt-5 gap-5">
@@ -85,13 +91,11 @@ const Home = () => {
                         return (
                             <div
                                 className="card w-[18rem] bg-base-100 shadow-xl "
+                                data-aos="fade-up-right"
                                 key={i}
                             >
                                 <figure>
-                                    <img
-                                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                                        alt="Shoes"
-                                    />
+                                    <img src={logo} alt="alwan.net" />
                                 </figure>
                                 <div className="card-body">
                                     <h2 className="card-title">
@@ -102,7 +106,10 @@ const Home = () => {
                                         choose?
                                     </p> */}
                                     <div className="card-actions justify-end">
-                                        <button className="btn btn-primary">
+                                        <button
+                                            className="btn btn-primary"
+                                            onClick={() => order(product.title)}
+                                        >
                                             {product.price}
                                         </button>
                                     </div>
@@ -113,7 +120,7 @@ const Home = () => {
                 </div>
             </div>
             {/* contact me */}
-            <div className="p-5  mt-[5rem]">
+            <div className="p-5  mt-[5rem]" data-aos="flip-left">
                 <div className=" bg-yellow-400 shadow-xl flex flex-col md:flex-row-reverse md:h-[20rem] rounded-md p-4">
                     <div className="md:w-1/2 relative md:-top-[9rem]">
                         <img src={man} alt="Man" className="w-[30rem]" />

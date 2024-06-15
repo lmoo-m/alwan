@@ -1,33 +1,30 @@
 import React from "react";
 import Layout from "../components/layout";
 import Navigation from "../components/navigation";
+import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Layanan = () => {
     return (
         <Layout>
             <Navigation page={"Layanan"}>
                 <div className="flex flex-col items-center my-4 gap-3">
-                    <h1 className="text-4xl font-semibold">Layanan Kami</h1>
-                    <div className="card card-side  flex-col md:flex-row  bg-base-100 shadow-xl w-[70%] mt-10">
+                    <h1 className="text-4xl font-semibold" data-aos="fade-up">
+                        Layanan Kami
+                    </h1>
+
+                    <div
+                        data-aos="fade-up-right"
+                        className="card card-side  flex-col md:flex-row  bg-base-100 shadow-xl w-[70%] mt-10"
+                    >
                         <figure>
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-                                alt="Movie"
-                            />
+                            <img src={logo} alt="logo" className="w-[20rem]" />
                         </figure>
                         <div className="card-body">
-                            <ul className="menu  w-full text-lg rounded-box">
+                            <ul className="menu w-full text-lg rounded-box">
                                 <li>
                                     <h2 className="menu-title">Wifi Area</h2>
                                     <ul>
-                                        <li>
-                                            <div className="flex">
-                                                <p>12 Jam</p>
-                                                <p className="text-end">
-                                                    Rp. 2.000
-                                                </p>
-                                            </div>
-                                        </li>
                                         <li>
                                             <div className="flex">
                                                 <p>1 Hari</p>
@@ -56,18 +53,22 @@ const Layanan = () => {
                                 </li>
                             </ul>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">
+                                <Link
+                                    to={"/kontak"}
+                                    className="btn btn-primary"
+                                >
                                     Hubungi Kami
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="card card-side flex-col md:flex-row bg-base-100 shadow-xl w-[70%] ">
+                    {/*  */}
+                    <div
+                        data-aos="fade-up-right"
+                        className="card card-side  flex-col md:flex-row  bg-base-100 shadow-xl w-[70%] mt-10"
+                    >
                         <figure>
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-                                alt="Movie"
-                            />
+                            <img src={logo} alt="logo" className="w-[20rem]" />
                         </figure>
                         <div className="card-body">
                             <ul className="menu w-full text-lg rounded-box">
@@ -94,9 +95,12 @@ const Layanan = () => {
                                 </li>
                             </ul>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">
+                                <Link
+                                    to={"/kontak"}
+                                    className="btn btn-primary"
+                                >
                                     Hubungi Kami
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
