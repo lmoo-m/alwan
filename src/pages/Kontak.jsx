@@ -52,7 +52,7 @@ const Kontak = () => {
                                         bantuan.
                                     </p>
                                     <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                                        papppap@gmail.com
+                                        chalwanizindan741@gmail.com
                                     </p>
                                 </div>
 
