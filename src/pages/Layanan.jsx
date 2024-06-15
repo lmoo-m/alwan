@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import Navigation from "../components/navigation";
-import logo from "../assets/logo.png";
+import product from "../assets/product.jpeg";
 import { Link } from "react-router-dom";
 
 const Layanan = () => {
@@ -18,7 +18,11 @@ const Layanan = () => {
                         className="card card-side  flex-col md:flex-row  bg-base-100 shadow-xl w-[70%] mt-10"
                     >
                         <figure>
-                            <img src={logo} alt="logo" className="w-[20rem]" />
+                            <img
+                                src={product}
+                                alt="logo"
+                                className="w-[20rem]"
+                            />
                         </figure>
                         <div className="card-body">
                             <ul className="menu w-full text-lg rounded-box">
@@ -68,7 +72,11 @@ const Layanan = () => {
                         className="card card-side  flex-col md:flex-row  bg-base-100 shadow-xl w-[70%] mt-10"
                     >
                         <figure>
-                            <img src={logo} alt="logo" className="w-[20rem]" />
+                            <img
+                                src={product}
+                                alt="logo"
+                                className="w-[20rem]"
+                            />
                         </figure>
                         <div className="card-body">
                             <ul className="menu w-full text-lg rounded-box">

@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import heroImage from "../assets/hero.jpg";
 import intro from "../assets/intro.jpg";
 import man from "../assets/Man-Top.webp";
-import logo from "../assets/logo.png";
+import productImage from "../assets/product.jpeg";
 import { Link } from "react-router-dom";
 import order from "../utils/order";
 
@@ -95,7 +95,7 @@ const Home = () => {
                                 key={i}
                             >
                                 <figure>
-                                    <img src={logo} alt="alwan.net" />
+                                    <img src={productImage} alt="alwan.net" />
                                 </figure>
                                 <div className="card-body">
                                     <h2 className="card-title">
