@@ -12,7 +12,11 @@ const Layout = ({ children }) => {
     useEffect(() => {
         headTitle(pathname.split("/")[1]);
         Aos.init();
-    }, []);
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }, [pathname]);
 
     return (
         <div>

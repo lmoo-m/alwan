@@ -1,6 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
-import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
+import {
+    createBrowserRouter,
+    Link,
+    RouterProvider,
+    useLocation,
+} from "react-router-dom";
 import Home from "./pages/Home";
 import Layanan from "./pages/Layanan";
 import Kontak from "./pages/Kontak";

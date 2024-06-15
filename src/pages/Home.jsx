@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Layout from "../components/layout";
-import heroImage from "../assets/hero.jpg";
+import heroImage from "../assets/BG-9.jpg";
 import intro from "../assets/intro.jpg";
-import man from "../assets/Man-Top.webp";
+import man from "../assets/Man-Top.png";
 import productImage from "../assets/product.jpeg";
 import { Link } from "react-router-dom";
 import order from "../utils/order";
@@ -45,12 +45,14 @@ const Home = () => {
                             Solusi Layanan Internet Anda
                         </h1>
                         <p className="mb-5" data-aos="fade-up">
-                            Provident cupiditate voluptatem et in. Quaerat
-                            fugiat ut assumenda excepturi exercitationem quasi.
-                            In deleniti eaque aut repudiandae et a id nisi.
+                            Nikmati pengalaman internet tanpa hambatan dengan
+                            kecepatan tinggi dan koneksi yang stabil. Apapun
+                            kebutuhan Anda bekerja dari rumah atau bermain game
+                            online kami menyediakan layanan internet yang dapat
+                            Anda andalkan setiap saat.
                         </p>
                         <button className="btn btn-primary" data-aos="fade-up">
-                            Get Started
+                            Mulai Sekarang
                         </button>
                     </div>
                 </div>
@@ -65,15 +67,29 @@ const Home = () => {
                     />
                     <div>
                         <p className="py-6" data-aos="fade-up">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Cumque pariatur voluptate, ea, consequuntur
-                            temporibus incidunt quae aut quasi nisi velit fuga
-                            sed accusamus et sint quo aliquid blanditiis fugiat
-                            eos? Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Quis perferendis tempora dolorum
-                            aspernatur aliquam temporibus minima pariatur id
-                            quia corporis, fugiat laborum? Nobis, deleniti.
-                            Praesentium perferendis aliquid vero! Quas, iure.
+                            Kami berkomitmen untuk menyediakan layanan internet
+                            yang cepat, andal, dan terjangkau bagi semua
+                            pelanggan kami. kami telah berfokus pada memberikan
+                            pengalaman online terbaik dengan solusi teknologi
+                            terkini.
+                            <br />
+                            <br />
+                            Misi kami adalah menghubungkan setiap rumah dan
+                            bisnis dengan jaringan internet berkualitas tinggi
+                            yang mendukung berbagai kebutuhan digital, mulai
+                            dari streaming video, game online, hingga pekerjaan
+                            jarak jauh dan edukasi online. Kami percaya bahwa
+                            akses internet yang baik adalah hak setiap individu,
+                            dan kami berusaha untuk menjadikannya kenyataan.
+                            <br />
+                            <br />
+                            Dengan tim profesional yang berpengalaman dan
+                            dukungan pelanggan yang responsif, kami siap
+                            membantu Anda mengatasi segala tantangan
+                            konektivitas. Inovasi adalah inti dari layanan kami,
+                            dan kami terus berupaya meningkatkan infrastruktur
+                            kami untuk memastikan Anda mendapatkan pengalaman
+                            internet yang unggul.
                         </p>
                     </div>
                 </div>
