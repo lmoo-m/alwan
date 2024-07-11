@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import Navigation from "../components/navigation";
 import product from "../assets/product.jpeg";
+import pembayaran from "../assets/pembayaran.jpeg";
 import { Link } from "react-router-dom";
 
 const Layanan = () => {
@@ -97,6 +98,50 @@ const Layanan = () => {
                                             </div>
                                             <div className="flex">
                                                 <p>Wifi Voucheran</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div className="card-actions justify-end">
+                                <Link
+                                    to={"/kontak"}
+                                    className="btn btn-primary"
+                                >
+                                    Hubungi Kami
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    {/*  */}
+                    <div
+                        data-aos="fade-up-right"
+                        className="card card-side  flex-col md:flex-row  bg-base-100 shadow-xl w-[70%] mt-10"
+                    >
+                        <figure>
+                            <img
+                                src={pembayaran}
+                                alt="logo"
+                                className="w-[20rem]"
+                            />
+                        </figure>
+                        <div className="card-body">
+                            <ul className="menu w-full text-lg rounded-box">
+                                <li>
+                                    <h2 className="menu-title">Pembayaran</h2>
+                                    <ul>
+                                        <li>
+                                            <div className="flex">
+                                                <p>Pulsa</p>
+                                            </div>
+                                            <div className="flex">
+                                                <p>Token Listrik</p>
+                                            </div>
+                                            <div className="flex">
+                                                <p>Top Up Game</p>
+                                            </div>
+                                            <div className="flex">
+                                                <p>Dan Lain Lain</p>
                                             </div>
                                         </li>
                                     </ul>
