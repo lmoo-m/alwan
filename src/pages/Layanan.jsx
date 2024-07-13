@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import Navigation from "../components/navigation";
 import product from "../assets/product.jpeg";
-import pembayaran from "../assets/pembayaran.jpeg";
+import pembayaran from "../assets/pembayaran2.jpeg";
 import { Link } from "react-router-dom";
 
 const Layanan = () => {
@@ -16,7 +16,7 @@ const Layanan = () => {
 
                     <div
                         data-aos="fade-up-right"
-                        className="card card-side  flex-col md:flex-row  bg-base-100 shadow-xl w-[70%] mt-10"
+                        className="card card-side flex-col md:flex-row  bg-base-100 shadow-xl w-[70%] mt-10"
                     >
                         <figure>
                             <img
@@ -70,13 +70,13 @@ const Layanan = () => {
                     {/*  */}
                     <div
                         data-aos="fade-up-right"
-                        className="card card-side  flex-col md:flex-row  bg-base-100 shadow-xl w-[70%] mt-10"
+                        className="card card-side flex-col md:flex-row  bg-base-100 shadow-xl w-[70%] mt-10"
                     >
-                        <figure>
+                        <figure className="overflow-hidden">
                             <img
                                 src={product}
                                 alt="logo"
-                                className="w-[20rem]"
+                                className="w-[20rem] h-full"
                             />
                         </figure>
                         <div className="card-body">
@@ -118,17 +118,19 @@ const Layanan = () => {
                         data-aos="fade-up-right"
                         className="card card-side  flex-col md:flex-row  bg-base-100 shadow-xl w-[70%] mt-10"
                     >
-                        <figure>
+                        <figure className="overflow-hidden">
                             <img
                                 src={pembayaran}
                                 alt="logo"
-                                className="w-[20rem]"
+                                className="w-[20rem] h-full"
                             />
                         </figure>
                         <div className="card-body">
                             <ul className="menu w-full text-lg rounded-box">
                                 <li>
-                                    <h2 className="menu-title">Pembayaran</h2>
+                                    <h2 className="menu-title">
+                                        Top Up E-Wallet
+                                    </h2>
                                     <ul>
                                         <li>
                                             <div className="flex">

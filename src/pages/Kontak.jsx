@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import Navigation from "../components/navigation";
+import { Link } from "react-router-dom";
 
 const Kontak = () => {
     return (
@@ -115,9 +116,13 @@ const Kontak = () => {
                                     <p className="mt-2 text-sm text-gray-500 ">
                                         Aktif Setiap Hari.
                                     </p>
-                                    <p className="mt-2 text-sm text-blue-500 ">
+                                    <Link
+                                        target="_blank"
+                                        to={"https://wa.me/62882008937262"}
+                                        className="mt-2 text-sm text-blue-500 "
+                                    >
                                         +62 882-0089-37262
-                                    </p>
+                                    </Link>
                                 </div>
                             </div>
 
